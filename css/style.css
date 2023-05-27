@@ -1,0 +1,337 @@
+html {
+    height: 100%;
+}
+
+.todo {
+    width: 100%;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo .video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 50px 0px 50px 0px;
+}
+
+.todo .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    width: 900px;
+    height: auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.formulario {
+    height: auto;
+    min-width: 800px !important;
+    width: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+main {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.ejercicio .box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.ejercicio .box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.ejercicio .box input:focus~label,
+.ejercicio .box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.numh2 {
+    color: #03e9f4;
+}
+
+.main form button {
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main button .btn-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.main button span {
+    position: absolute;
+    display: block;
+}
+
+.main button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.main button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.main button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.main button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.main button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+.seleccionar {
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0px 30px 0px;
+    width: 100%;
+    height: 30px;
+    font-size: large;
+    text-align: center;
+    background-color: #141e30;
+    color: #fff;
+}
+
+.seleccionar::-ms-expand {
+    display: none;
+}
+
+.seleccionar:focus {
+    outline: none;
+}
+
+.seleccionar option {
+    color: #fff;
+    background-color: #141e30;
+    font-size: large;
+    text-align: center;
+}
+
+.label {
+    min-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171591;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    /* Ajusta el valor de padding según tu preferencia */
+    margin: 0 8px;
+    /* Ajusta el valor de margin según tu preferencia */
+    position: relative;
+}
+
+nav a[aria-current="page"] {
+    background-color: rgba(0, 0, 0, 0.277);
+    border-radius: 5px;
+}
+
+nav a:not([aria-current="page"])::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #7300ff;
+    transition: width 0.3s;
+}
+
+nav a:not([aria-current="page"]):hover::before {
+    width: 100%;
+}
+
+@keyframes underline-anim {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
