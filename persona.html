@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taller 1 | Persona</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/persona.js" defer></script>
+    </head>
+
+    <body>
+        <nav>
+            <a href="./animal.html">Animal</a>
+            <a href="./empleados.html">Empleados</a>
+            <a href="./figura.html">Figura</a>
+            <a href="./persona.html" aria-current="page">Persona</a>
+            <a href="./vehiculo.html">Vehiculo</a>
+        </nav>
+        <div class="todo">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./video/fondo.mp4" type="video/mp4" autoplay loop muted>
+                </video>
+                <div class="container">
+                    <div class="main">
+                        <form id="formulario1" class="formulario">
+                            <div class="ejercicio">
+                                <h2>Clase <span class="numh2">Persona</span></h2>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="nombre" id="nombre1" placeholder="Nombre"
+                                        required autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="number" name="edad" id="edad1" placeholder="Edad"
+                                        required autocomplete="off">
+                                </div>
+                                <select class="seleccionar" name="sexo" id="sexo1" title="select">
+                                    <option>Seleccionar</option>
+                                    <option value="hombre">Masculino</option>
+                                    <option value="mujer">Femenino</option>
+                                    <option value="no definido aún">Prefiero no decirlo</option>
+                                </select>
+                                <button type="submit">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text">Enviar</span>
+                                </button>
+                                <label id="mensaje1" class="label"></label>
+                            </div>
+                        </form>
+                        <form id="formulario2" class="formulario">
+                            <div class="ejercicio">
+                                <h2>Clase <span class="numh2">Estudiante</span></h2>
+                                <div class="box">
+                                    <input type="text" name="carrera" id="carrera2" placeholder="Ingrese su carrera"
+                                        autocomplete="off">
+                                </div>
+                                <button id="btn2" type="submit">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text">Enviar</span>
+                                </button>
+                                <label id="mensaje2" class="label"></label>
+                            </div>
+                        </form>
+                        <form id="formulario3" class="formulario">
+                            <div class="ejercicio">
+                                <h2>Metodo <span class="numh2">Estatico</span></h2>
+                                <label id="mensaje3" class="label"></label>
+                                <button id="btn2" type="submit">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text">Validar</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
