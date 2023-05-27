@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Empleado</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/empleados.js" defer></script>
+    </head>
+
+    <body>
+        <nav>
+            <a href="./animal.html">Animal</a>
+            <a href="./empleados.html" aria-current="page">Empleados</a>
+            <a href="./figura.html">Figura</a>
+            <a href="./persona.html">Persona</a>
+            <a href="./vehiculo.html">Vehiculo</a>
+        </nav>
+        <div class="todo">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./video/fondo.mp4" type="video/mp4" autoplay loop muted>
+                </video>
+                <div class="container">
+                    <div class="main">
+                        <form id="formulario1" class="formulario">
+                            <div class="ejercicio">
+                                <h2>Clase <span class="numh2">Empleado</span></h2>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="nombre" id="nombre" placeholder="Nombre"
+                                        required autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="edad" id="edad" placeholder="Edad" required
+                                        autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="sueldo" id="sueldo" placeholder="Sueldo"
+                                        required autocomplete="off">
+                                </div>
+                                <button type="submit" id="crearEmpleadoButton">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text">Enviar</span>
+                                </button>
+                                <label id="mensaje1" class="label"></label>
+                            </div>
+                        </form>
+                        <form id="formulario2" class="formulario">
+                            <div class="ejercicio">
+                                <h2>Clase <span>Gerente</span></h2>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="nombreGerente" id="nombreGerente"
+                                        placeholder="Nombre" required autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="edadGerente" id="edadGerente"
+                                        placeholder="Edad" required autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="sueldoGerente" id="sueldoGerente"
+                                        placeholder="Sueldo" required autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="departamento" id="departamento"
+                                        placeholder="Departamento" required autocomplete="off">
+                                </div>
+                                <button type="submit" id="crearGerenteButton">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text">Crear Gerente</span>
+                                </button>
+                                <label id="mensaje2" class="label">Salario Anual</label>
+                            </div>
+                        </form>
+                        <form id="formulario3" class="formulario">
+                            <div class="box">
+                                <button type="submit" id="generarIdEmpleadoButton">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text">Generar ID de Empleado</span>
+                                </button>
+                                <label id="idEmpleado" class="label"></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
