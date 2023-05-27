@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taller 2 | Animal</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/animal.js" defer></script>
+    </head>
+
+    <body>
+        <nav>
+            <a href="./animal.html" aria-current="page">Animal</a>
+            <a href="./empleados.html">Empleados</a>
+            <a href="./figura.html">Figura</a>
+            <a href="./persona.html">Persona</a>
+            <a href="./vehiculo.html">Vehiculo</a>
+        </nav>
+        <div class="todo">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./video/fondo.mp4" type="video/mp4" autoplay loop muted>
+                </video>
+                <div class="container">
+                    <div class="main">
+                        <form id="formulario1" class="formulario">
+                            <div class="ejercicio">
+                                <h2>Clase <span class="numh2">Animal</span></h2>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="nombreAnimal" id="nombreAnimal"
+                                        placeholder="Nombre" required autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="number" name="edadAnimal" id="edadAnimal"
+                                        placeholder="Edad" required autocomplete="off">
+                                </div>
+                                <button type="submit">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text" id="btnAnimal">Enviar</span>
+                                </button>
+                                <label id="mensaje1" class="label"></label>
+                            </div>
+                        </form>
+                        <form id="formulario2" class="formulario">
+                            <div class="ejercicio">
+                                <h2>Clase <span class="numh2">Perro</span></h2>
+                                <div class="box">
+                                    <input type="text" name="razaPerro" id="razaPerro" placeholder="La raza"
+                                        autocomplete="off">
+                                </div>
+                                <button id="btn2" type="submit">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text" id="btnPerro">Enviar</span>
+                                </button>
+                                <label id="mensaje2" class="label"></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
