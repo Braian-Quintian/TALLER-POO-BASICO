@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vehículo</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/vehiculo.js" defer></script>
+    </head>
+
+    <body>
+        <nav>
+            <a href="./animal.html">Animal</a>
+            <a href="./empleados.html">Empleados</a>
+            <a href="./figura.html">Figura</a>
+            <a href="./persona.html">Persona</a>
+            <a href="./vehiculo.html" aria-current="page">Vehículo</a>
+        </nav>
+        <div class="todo">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./video/fondo.mp4" type="video/mp4">
+                </video>
+                <div class="container">
+                    <div class="main">
+                        <form id="formulario1" class="formulario">
+                            <div class="ejercicio">
+                                <h2>Clase <span class="numh2">Vehículo</span></h2>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="marca" id="marca" placeholder="Marca"
+                                        required autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="modelo" id="modelo" placeholder="Modelo"
+                                        required autocomplete="off">
+                                </div>
+                                <button type="submit" id="crearVehiculoButton">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text">Enviar</span>
+                                </button>
+                                <label id="mensaje1" class="label"></label>
+                            </div>
+                        </form>
+                        <form id="formulario2" class="formulario">
+                            <div class="ejercicio">
+                                <h2>Clase <span>Coche</span></h2>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="marcaCoche" id="marcaCoche"
+                                        placeholder="Marca" required autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="modeloCoche" id="modeloCoche"
+                                        placeholder="Modelo" required autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="velocidadCoche" id="velocidadCoche"
+                                        placeholder="Velocidad" required autocomplete="off">
+                                </div>
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="combustible" id="combustible"
+                                        placeholder="Combustible" required autocomplete="off">
+                                </div>
+                                <button type="submit" id="crearCocheButton">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text">Enviar</span>
+                                </button>
+                                <label id="mensaje2" class="label"></label>
+                            </div>
+                        </form>
+                        <form id="formulario3" class="formulario">
+                            <div class="ejercicio">
+                                <div class="box">
+                                    <input class="inputForm" type="text" name="velocidadKmH" id="velocidadKmH"
+                                        placeholder="Velocidad en km/h" required autocomplete="off">
+                                </div>
+                                <button type="submit" id="convertirButton">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="btn-text">Convertir a MPH</span>
+                                </button>
+                                <label id="mensaje3" class="label"></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
