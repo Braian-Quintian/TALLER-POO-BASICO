@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 3 | Figura</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/figura.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="./animal.html">Animal</a>
+        <a href="./empleados.html">Empleados</a>
+        <a href="./figura.html" aria-current="page">Figura</a>
+        <a href="./persona.html">Persona</a>
+        <a href="./vehiculo.html">Vehiculo</a>
+    </nav>
+    <div class="todo">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="./video/fondo.mp4" type="video/mp4" autoplay loop muted>
+            </video>
+            <div class="container">
+                <div class="main">
+                    <form id="formulario1" class="formulario">
+                        <div class="ejercicio">
+                            <h2>Clase <span class="numh2">Figura</span></h2>
+                            <div class="box">
+                                <input class="inputForm" type="text" name="color" id="color" placeholder="Color"
+                                    required autocomplete="off">
+                            </div>
+                            <div class="box">
+                                <input class="inputForm" type="number" name="area" id="area" placeholder="Area" required
+                                    autocomplete="off">
+                            </div>
+                            <button type="submit" id="calcularAreaButton">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="btn-text">Enviar</span>
+                            </button>
+                            <label id="mensaje1" class="label"></label>
+                        </div>
+                    </form>
+                    <form id="formulario2" class="formulario">
+                        <div class="ejercicio">
+                            <h2>Clase <span class="numh2">Circulo</span></h2>
+                            <div class="box">
+                                <input type="number" name="color" id="radio" placeholder="radio"
+                                    autocomplete="off">
+                            </div>
+                            <button id="btn2" type="submit">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="btn-text">Enviar</span>
+                            </button>
+                            <label id="mensaje2" class="label"></label>
+                        </div>
+                    </form>
+                    <form id="formulario3" class="formulario">
+                        <div class="ejercicio">
+                            <h2>Clase <span class="numh2">Rectangulo</span></h2>
+                            <div class="box">
+                                <input class="inputForm" type="text" name="largo" id="largo" placeholder="Largo"
+                                    required autocomplete="off">
+                            </div>
+                            <div class="box">
+                                <input class="inputForm" type="number" name="ancho" id="ancho" placeholder="Ancho" required
+                                    autocomplete="off">
+                            </div>
+                            <button type="submit" id="calcularAreaButton">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="btn-text">Enviar</span>
+                            </button>
+                            <label id="mensaje3" class="label"></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
